@@ -5,19 +5,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>SATORU</title>
+
+    <script src="assets/js/app.js"></script>
 
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="icon" type="image/png" href="assets/images/logokecil.png" sizes="16x16" />
 </head>
 
-<body>
-
+<body onload="showMembers(1)">
     <nav>
         <div class="logo">
             <a href="index.html"><img src="assets/images/logokecil.png" /></a>
             <h1><a href="index.html">SATORU</a></h1>
         </div>
+
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#our-team">Our Team</a></li>
@@ -36,200 +39,202 @@
             Satoru merupakan singkatan dari Sija 2 Top Terus. <br /> Nama ini terinspirasi dari prestasi-prestasi yang telah dicapai oleh jurusan SIJA. Satoru dibuat pada <br /> saat kami kelas 10 (tahun 2021). Berbagai peristiwa dan kegiatan menyenangkan
             maupun menyedihkan <br /> akan kami bagikan di dalam web ini.
         </p>
-        <p></p>
     </div>
-    <section id="our-team">
+
+    <section id="our-team" class="section-content">
 
         <div class="our-team-section">
             <h2>Our Team</h2>
         </div>
 
+        <div class="button-container">
+            <button class="button" onclick="showMembers(1)">Nomor Urut 1 - 12</button>
+            <button class="button" onclick="showMembers(2)">Nomor Urut 13 - 24</button>
+            <button class="button" onclick="showMembers(3)">Nomor Urut 25 - 36</button>
+        </div>
+
         <div class="member-container">
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-1">
+                <img src="assets/foto/aida.png" />
                 <h3>Aang Kunadi</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 2" />
+            <div class="member-box" id="member-2">
+                <img src="assets/foto/aida.png" />
                 <h3>Aida Miftachulana</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 3" />
+            <div class="member-box" id="member-3">
+                <img src="assets/foto/aida.png" />
                 <h3>Aloisius Jonathan AS</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" i id="member-4">
+                <img src="assets/foto/aida.png" />
                 <h3>Anantya Larasati</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-5">
+                <img src="assets/foto/aida.png" />
                 <h3>Annisa A'inun</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-6">
+                <img src="assets/foto/aida.png" />
                 <h3>Arselo Hibatullah</h3>
-                <a href="#" class="btn-ig">Lihat IG</a>
+                <a href="https://www.chess.com/" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-7">
+                <img src="assets/foto/aida.png" />
                 <h3>Aulia Syahida</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-8">
+                <img src="assets/foto/aida.png" />
                 <h3>Aurelina Indira</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-9">
+                <img src="assets/foto/aida.png" />
                 <h3>Auryn Syabila</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-10">
+                <img src="assets/foto/aida.png" />
                 <h3>Bonaventura Pradipta</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-11">
+                <img src="assets/foto/aida.png" />
                 <h3>Chyntia Rahmawati</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-12">
+                <img src="assets/foto/aida.png" />
                 <h3>Cika Aurellia</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-13">
+                <img src="assets/foto/aida.png" />
                 <h3>Clara Mela</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-14">
+                <img src="assets/foto/aida.png" />
                 <h3>Devino Khosyi</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-15">
+                <img src="assets/foto/aida.png" />
                 <h3>Elisabeth Astri</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-16">
+                <img src="assets/foto/aida.png" />
                 <h3>Farrelino Arvia</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-17">
+                <img src="assets/foto/aida.png" />
                 <h3>Ferdhina Rizqiana</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-18">
+                <img src="assets/foto/aida.png" />
                 <h3>Finayah Nur Ayu</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-19">
+                <img src="assets/foto/aida.png" />
                 <h3>Gerard Pamungkas</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-20">
+                <img src="assets/foto/aida.png" />
                 <h3>Ghanivian Ruliff</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-21">
+                <img src="assets/foto/aida.png" />
                 <h3>Hanifa Nur Akhilah</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-22">
+                <img src="assets/foto/aida.png" />
                 <h3>Haykal Rahmadian</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-23">
+                <img src="assets/foto/aida.png" />
                 <h3>Ihsan Fuady</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-24">
+                <img src="assets/foto/aida.png" />
                 <h3>Julian Adi Nugroho</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-25">
+                <img src="assets/foto/aida.png" />
                 <h3>Khasia Lathifa</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-26">
+                <img src="assets/foto/aida.png" />
                 <h3>Mikael Joenathan</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-27">
+                <img src="assets/foto/aida.png" />
                 <h3>Muhammad Rhafi</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-28">
+                <img src="assets/foto/aida.png" />
                 <h3>Nayla Audyna</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-29">
+                <img src="assets/foto/aida.png" />
                 <h3>Nicolas Febrin</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-30">
+                <img src="assets/foto/aida.png" />
                 <h3>Novita Rahmawati</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-31">
+                <img src="assets/foto/aida.png" />
                 <h3>Oktaviani Puspitasari</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-32">
+                <img src="assets/foto/aida.png" />
                 <h3>Puri Deki</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-33">
+                <img src="assets/foto/aida.png" />
                 <h3>Raffael Deannova</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-34">
+                <img src="assets/foto/aida.png" />
                 <h3>Risma Dian Fatya</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-35">
+                <img src="assets/foto/aida.png" />
                 <h3>Umar</h3>
-                <a href="#" class="btn-ig">Lihat IG</a>
+                <a href="http://stembactf.space:7000/" class="btn-ig">Lihat IG</a>
             </div>
-            <div class="member-box">
-                <img src="assets/foto/aida.png" alt="Anggota 1" />
+            <div class="member-box" id="member-36">
+                <img src="assets/foto/aida.png" />
                 <h3>Vhindu Marsa</h3>
                 <a href="#" class="btn-ig">Lihat IG</a>
             </div>
         </div>
-    </section>
-
-    <section id="gallery">
-
     </section>
 
 </body>
