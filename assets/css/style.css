@@ -129,13 +129,13 @@ ul li a:hover {
 .button-container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 
 .button {
-  background-color: white;
-  color: #da9f00;
+  background-color: #af3a3a;
+  color: #fff;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -153,10 +153,12 @@ ul li a:hover {
 }
 
 .member-container {
+  margin-left: 50px;
+  margin-right: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
 }
 
 .member-container h2 {
@@ -208,4 +210,193 @@ ul li a:hover {
 .btn-ig:hover {
   background-color: #da9f00;
   color: #000;
+}
+
+.gallery {
+  padding: 80px 0;
+}
+
+.gallery .section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.gallery .section-title .title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #000;
+}
+
+.section-title {
+  position: relative;
+}
+
+.subtitle .photo img {
+  width: 8rem;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 2rem;
+}
+
+.photo {
+  position: absolute;
+  right: 68rem;
+  bottom: 0;
+}
+
+.gallery .section-title .subtitle p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #000;
+}
+
+.gallery-carousel {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  margin: 0 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .gallery .section-title .title {
+    font-size: 28px;
+  }
+  .gallery .section-title .subtitle p {
+    font-size: 16px;
+  }
+}
+
+.kegiatan-container {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.kegiatan-box {
+  background-color: #af291e;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  width: 350px;
+}
+
+.kegiatan-box img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border-radius: 0%;
+}
+
+.kegiatan-box h3,
+.kegiatan-box p {
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  margin: 10px 20px;
+}
+
+.kegiatan-box h3 {
+  margin-top: 18px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.kegiatan-box p {
+  font-size: 18px;
+}
+
+.kegiatan-box .tanggal {
+  font-size: 14px;
+  margin-top: auto;
+  margin-bottom: 10px;
+  text-align: end;
+}
+
+#contact {
+  padding: 50px;
+}
+
+#contact h2 {
+  text-align: center;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact .form-group {
+  margin-bottom: 20px;
+}
+
+#contact label {
+  display: block;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#contact textarea {
+  height: 150px;
+}
+
+#contact button[type="submit"] {
+  background-color: #af3a3a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: #000;
 }
