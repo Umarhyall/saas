@@ -400,3 +400,98 @@ ul li a:hover {
 #contact button[type="submit"]:hover {
   background-color: #000;
 }
+
+footer {
+  background-color: #ad8787;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+  margin-right: 500px;
+  display: flex;
+  padding: 20px;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-logo {
+  margin-left: 40px;
+}
+
+.footer-logo h2,
+.footer-follow h2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer-logo p,
+.footer-follow p,
+.social-media p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+  text-align: center;
+}
+
+.footer-logo img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-divider {
+  border: 1px solid white;
+  height: 230px;
+  margin-left: 140px;
+  margin-right: 60px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.footer-know-more {
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-know-more h2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: left;
+}
+
+.footer-know-more a {
+  margin-top: 0px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  text-align: left;
+}
+
+.footer-decoration {
+  justify-content: flex-end;
+}
