@@ -1,25 +1,25 @@
-*,
-html {
+* {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: #fbdad6;
-  margin: 0;
-  padding: 0;
+  overflow-x: hidden;
 }
+
+/* Navbar */
 
 nav {
   background-color: #800000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  height: 80px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 10;
 }
@@ -27,6 +27,7 @@ nav {
 .logo {
   display: flex;
   align-items: center;
+  letter-spacing: 3px;
 }
 
 .logo h1 a {
@@ -41,15 +42,14 @@ nav {
 
 .logo img {
   height: 50px;
-  margin-right: 20px;
-  margin-left: 20px;
+  padding-left: 90px;
+  padding-right: 30px;
 }
 
 ul {
   display: flex;
   list-style: none;
-  margin-right: 50px;
-  padding: 0;
+  justify-content: space-between;
 }
 
 li {
@@ -79,11 +79,117 @@ ul li a:hover {
   color: #fff;
 }
 
+/* Humburger */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -6px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: #da9f00;
+  transform: rotate(45deg) translate(1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: #da9f00;
+  transform: rotate(-45deg) translate(-1px, 1px);
+}
+
+/* Navbar Responsive */
+
+@media screen and (max-width: 768px) {
+  ul {
+    width: 52%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    background-color: #800000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Background Image */
+
 .hero-image {
-  width: 100%;
+  /* width: 100%; */
   height: 100vh;
   background-image: url("/assets/images/fotobersama.png");
   background-size: cover;
+}
+
+/* Untuk layar dengan lebar <= 768px */
+
+@media (max-width: 768px) {
+  .hero-image {
+    height: 50vh;
+    /* Ubah tinggi gambar menjadi 50% dari tinggi viewport */
+  }
+}
+
+/* Untuk layar dengan lebar <= 576px */
+
+@media (max-width: 576px) {
+  .hero-image {
+    height: 40vh;
+    /* Ubah tinggi gambar menjadi 40% dari tinggi viewport */
+  }
 }
 
 .about-section {
@@ -362,21 +468,14 @@ ul li a:hover {
   margin-bottom: 20px;
 }
 
-#contact label {
-  display: block;
-  font-size: 18px;
-  color: #000;
-  margin-bottom: 10px;
-}
-
 #contact input[type="text"],
 #contact input[type="email"],
-#contact input[type="tel"],
 #contact textarea {
+  background-color: #d9d9d9;
   width: 100%;
   padding: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
@@ -388,12 +487,15 @@ ul li a:hover {
 }
 
 #contact button[type="submit"] {
-  background-color: #af3a3a;
+  display: block;
+  margin: auto;
+  background-color: #ff0a8e;
   color: #fff;
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
+  border-radius: 50px;
+  width: 50%;
+  padding: 15px;
+  font-size: 19px;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
