@@ -6,28 +6,30 @@
 
 body {
   background-color: #fbdad6;
-  overflow-x: hidden;
 }
 
 /* Navbar */
 
 nav {
+  top: 0;
   background-color: #800000;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   height: 80px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   position: fixed;
-  width: 100%;
-  z-index: 10;
+  z-index: 1;
 }
 
 .logo {
+  font-family: "Pacifico", cursive;
+  letter-spacing: 3px;
+  /* z-index: 10; */
   display: flex;
   align-items: center;
-  letter-spacing: 3px;
 }
 
 .logo h1 a {
@@ -47,6 +49,7 @@ nav {
 }
 
 ul {
+  width: 40%;
   display: flex;
   list-style: none;
   justify-content: space-between;
@@ -87,6 +90,7 @@ ul li a:hover {
   height: 20px;
   justify-content: space-between;
   position: relative;
+  z-index: 10;
 }
 
 .menu-toggle input {
@@ -135,8 +139,12 @@ ul li a:hover {
 /* Navbar Responsive */
 
 @media screen and (max-width: 768px) {
+  .logo img {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   ul {
-    width: 52%;
+    width: 40%;
   }
 }
 
@@ -149,46 +157,40 @@ ul li a:hover {
     position: absolute;
     right: 0;
     top: 0;
-    width: 80%;
-    height: 100vh;
+    width: 100%;
+    height: 70vh;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
     z-index: -1;
-    transform: translateX(100%);
+    flex-direction: column;
     transition: all 1s;
     opacity: 0;
+    transform: translateX(100%);
   }
   nav ul.slide {
     opacity: 1;
     transform: translateX(0);
+  }
+  .menu-toggle {
+    margin-right: 1rem;
   }
 }
 
 /* Background Image */
 
 .hero-image {
-  /* width: 100%; */
+  width: 100%;
   height: 100vh;
   background-image: url("/assets/images/fotobersama.png");
   background-size: cover;
 }
 
-/* Untuk layar dengan lebar <= 768px */
-
-@media (max-width: 768px) {
-  .hero-image {
-    height: 50vh;
-    /* Ubah tinggi gambar menjadi 50% dari tinggi viewport */
-  }
-}
-
-/* Untuk layar dengan lebar <= 576px */
-
 @media (max-width: 576px) {
   .hero-image {
-    height: 40vh;
-    /* Ubah tinggi gambar menjadi 40% dari tinggi viewport */
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
   }
 }
 
@@ -205,12 +207,6 @@ ul li a:hover {
   font-size: 30px;
   color: #000;
   text-align: center;
-}
-
-.about-section img {
-  width: 100%;
-  max-width: 230px;
-  height: auto;
 }
 
 .about-section p {
