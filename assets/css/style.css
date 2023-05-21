@@ -27,7 +27,6 @@ nav {
 .logo {
   font-family: "Pacifico", cursive;
   letter-spacing: 3px;
-  /* z-index: 10; */
   display: flex;
   align-items: center;
 }
