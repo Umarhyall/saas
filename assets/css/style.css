@@ -365,10 +365,10 @@ ul li a:hover {
 .gallery-item {
   flex: 0 0 calc(30% - 10px);
   margin-bottom: 20px;
-  border-radius: 20px;
 }
 
 .gallery-item img {
+  border-radius: 20px;
   max-width: 100%;
   height: auto;
   transition: transform 0.3s ease-in-out;
