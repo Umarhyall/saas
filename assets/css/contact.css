@@ -16,7 +16,7 @@ body {
 }
 
 .left {
-  height: 900px;
+  /* height: 900px; */
   width: 800px;
 }
 
@@ -92,4 +92,128 @@ body {
 
 .footer a:hover {
   color: #da9f00;
+}
+
+#contact {
+  padding: 50px;
+}
+
+#contact h2 {
+  text-align: center;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact .form-group {
+  margin-bottom: 20px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  background-color: #d9d9d9;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#contact textarea {
+  height: 150px;
+}
+
+#contact button[type="submit"] {
+  display: block;
+  margin: auto;
+  background-color: #ff0a8e;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  width: 50%;
+  padding: 15px;
+  font-size: 19px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: #000;
+}
+
+@media screen and (max-width: 576px) {
+  .contact-us {
+    padding-top: 70px;
+  }
+  .container-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5a3d3d;
+    border-radius: 0px;
+    max-width: 100%;
+    height: auto;
+  }
+  .left {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 100px;
+  }
+  .logo-sija img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  .logo-sija p {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+  .icon {
+    justify-content: center;
+    font-size: 30px;
+  }
+  .right {
+    margin-top: 0px;
+    margin-right: 0;
+    margin-bottom: 100px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 50px;
+  }
+  .footer {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  #contact {
+    padding: 30px;
+  }
+  #contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  #contact form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact textarea {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  #contact button[type="submit"] {
+    width: 100%;
+  }
 }

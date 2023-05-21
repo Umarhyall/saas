@@ -448,65 +448,6 @@ ul li a:hover {
   text-align: end;
 }
 
-#contact {
-  padding: 50px;
-}
-
-#contact h2 {
-  text-align: center;
-  color: #000;
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-
-#contact form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-#contact .form-group {
-  margin-bottom: 20px;
-}
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact textarea {
-  background-color: #d9d9d9;
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-#contact textarea {
-  height: 150px;
-}
-
-#contact button[type="submit"] {
-  display: block;
-  margin: auto;
-  background-color: #ff0a8e;
-  color: #fff;
-  border: none;
-  border-radius: 50px;
-  width: 50%;
-  padding: 15px;
-  font-size: 19px;
-  font-family: "Poppins", sans-serif;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-#contact button[type="submit"]:hover {
-  background-color: #000;
-}
-
 footer {
   background-color: #ad8787;
   border-top-right-radius: 150px;
@@ -604,7 +545,76 @@ footer {
   text-align: left;
 }
 
+@media screen and (max-width: 576px) {
+  footer {
+    background-color: #ad8787;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-logo {
+    flex: 1 0 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-logo h2,
+  .footer-follow h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+  .footer-logo p,
+  .footer-follow p,
+  .social-media p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .footer-logo h2,
+  .footer-logo p {
+    text-align: center;
+    margin-left: 0;
+  }
+  .footer-logo img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-divider {
+    display: none;
+  }
+  .footer-follow {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .footer-know-more {
+    margin-left: 0;
+    flex: 1 0 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-know-more h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+  .footer-know-more a {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
 /* ============== DECORATION FOOTER ============== */
+
+@media screen and (max-width: 576px) {
+  .footer-decoration {
+    display: none;
+  }
+}
 
 .footer-decoration {
   width: 100%;

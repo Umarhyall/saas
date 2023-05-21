@@ -8,12 +8,11 @@
 
     <title>Satoru</title>
 
-    <script src="assets/js/app.js"></script>
-
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/contact.css">
 
     <link rel="icon" type="image/png" href="assets/images/logokecil.png" sizes="16x16" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
@@ -23,20 +22,25 @@
 
 <body>
     <nav>
-        <div class="logo ">
-            <a href="index.html "><img src="assets/images/logokecil.png " /></a>
-            <h1><a href="index.html ">SATORU</a></h1>
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/logokecil.png" /></a>
+            <h1><a href="index.html">SATORU</a></h1>
         </div>
-
         <ul>
-            <li><a href="index.html ">Home</a></li>
-            <li><a href="index.html#our-team ">Our Team</a></li>
-            <li><a href="index.html#gallery ">Gallery</a></li>
-            <li><a href="index.html#act ">Our Act</a></li>
-            <li><a href="contact.html " class="contact-btn ">Contact Us</a></li>
+            <li class="a"><a href="index.html#home">Home</a></li>
+            <li class="b"><a href="index.html#our-team">Our Team</a></li>
+            <li class="c"><a href="index.html#gallery">Gallery</a></li>
+            <li class="d"><a href="index.html#act">Our Act</a></li>
+            <li class="e"><a href="contact.html" class="contact-btn">Contact Us</a></li>
         </ul>
+        <div class="menu-toggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
-
+    <script src="assets/js/script.js"></script>
     <section class="contact-us ">
         <div class="container-contact ">
             <div class="left ">
@@ -49,7 +53,7 @@
                     <p>Get in touch</p>
                 </div>
                 <div class="icon">
-                    <a href="#" target="_blank">
+                    <a href="https://www.instagram.com/satoru.sija/" target="_blank">
                         <i class="fa fa-instagram"></i>
                     </a>
                     <a href="#" target="_blank">
@@ -68,7 +72,7 @@
                     <h2>Contact Us</h2>
                 </div>
                 <section id="contact">
-                    <form>
+                    <form action="https://formspree.io/f/mnqyyqae" method="POST">
                         <div class="form-group">
                             <input type="text" id="name" name="name" required placeholder="Full Name">
                         </div>
